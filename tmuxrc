@@ -1,0 +1,36 @@
+unbind C-b
+set -g prefix C-a
+bind-key C-a last-window
+bind-key a send-prefix
+
+# screen-like focus switching between panes
+bind-key Tab select-pane -t :.+
+
+setw -g utf8 on
+set -g status-utf8 on
+
+set -g default-terminal "screen-256color"
+
+# alternatively, use better mnemonics for horizontal/vertical splits
+# cnk: amen
+bind-key - split-window -v
+bind-key _ split-window -v
+bind-key | split-window -h
+
+# `C-a l` for panes, `C-a C-a` for windows (a la screen)
+bind-key l last-pane
+
+# vi-style controls for copy mode
+setw -g mode-keys vi
+
+# Statusbar settings
+
+# toggle statusbar
+bind-key s set status
+
+# use vi-style key bindings in the status line
+set -g status-keys vi
+
+# amount of time for which status line messages and other indicators
+# are displayed. time is in milliseconds.
+set -g display-time 2000

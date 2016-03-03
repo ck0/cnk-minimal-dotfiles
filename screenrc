@@ -1,0 +1,24 @@
+vbell off
+vbell_msg "Ring"
+
+autodetach on # detach on hangup
+
+startup_message off # don't display copyright page
+
+# setup the caption
+hardstatus alwayslastline "%{-b gk}%-w%{+b kg}%50>%n %t%{-b gk}%+w %=%C%<"
+
+bindkey "^[[c" next
+bindkey "^[[d" prev
+bindkey "^[[b" focus
+
+altscreen on
+ignorecase on
+
+# terminfo and termcap for nice 256 color terminal
+# term screen-256color
+attrcolor b ".I"                                          # allow bold colors
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'  # set some colors
+defbce "off"                                              # and erase with bg color
+
+defscrollback 10000

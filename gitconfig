@@ -1,0 +1,21 @@
+[user]
+	name = Chris Kleinknecht
+	email = chris@c24t.org
+[branch]
+	autosetuprebase = always
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	co = checkout
+	cob = checkout -b
+	lg = log --graph --decorate --abbrev-commit
+	l = lg --pretty=oneline
+	st = status
+[merge]
+	ff = false
+	commit = false
+	defaulttoupstream = true
+[push]
+	default = tracking
