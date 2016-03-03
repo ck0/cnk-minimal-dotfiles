@@ -1,17 +1,5 @@
 ZSHRC=$HOME/.zshrc
 
-# TODO fix
-export PATH=/Users/cnk/src/macvim/src/Macvim:$PATH
-export VIM_APP_DIR=$HOME/src/macvim/src/MacVim/build/Release
-
-# Use GNU coreutils everywhere
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
-# THE LAST SHALL BE FIRST AND THE FIRST SHALL BE LAST
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$HOME/src/bin:$PATH
-
 export ALIASES=$HOME/.aliases
 export AUTO_ALIASES=$ALIASES/auto
 
