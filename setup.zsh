@@ -1,6 +1,6 @@
 #! /usr/bin/env zsh
 
-sudo chsh -s $(which zsh) cnk
+sudo chsh -s $(which zsh) $USER
 
 # go install coreutils if this line fails on OSX
 dotdir=$(readlink -f $(pwd))
